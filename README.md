@@ -1,6 +1,6 @@
 # DummyJSON Products API Test Suite
 
-A comprehensive TypeScript + Playwright API test suite for validating DummyJSON Products endpoints. This project demonstrates clean test architecture using design patterns for maintainability and scalability.
+A comprehensive TypeScript + Playwright API test suite for validating DummyJSON Products endpoints.
 
 ## Overview
 
@@ -14,7 +14,6 @@ This test suite covers all Products API endpoints from DummyJSON, including:
 
 - Node.js (v18 or higher recommended)
 - npm or yarn package manager
-- Internet connection (for API calls)
 
 ## Installation
 
@@ -114,35 +113,6 @@ const api = new ProductsAPI(request);
 const product = await api.getProductById(1);
 ```
 
-**Benefits:**
-- Single source of truth for API endpoints
-- Easy to update when API changes
-- Consistent error handling
-- Better test readability
-
-## API Endpoints Tested
-
-### GET Endpoints
-- `GET /products` - Get all products (with pagination)
-- `GET /products/:id` - Get single product
-- `GET /products/search?q=query` - Search products
-- `GET /products?limit=X&skip=Y` - Pagination
-- `GET /products?select=fields` - Field selection
-- `GET /products?sortBy=field&order=asc|desc` - Sorting
-- `GET /products/categories` - Get all categories
-- `GET /products/category-list` - Get category list
-- `GET /products/category/:category` - Get products by category
-
-### POST Endpoints
-- `POST /products/add` - Add new product
-
-### PUT/PATCH Endpoints
-- `PUT /products/:id` - Update product (full)
-- `PATCH /products/:id` - Partially update product
-
-### DELETE Endpoints
-- `DELETE /products/:id` - Delete product
-
 ## Configuration
 
 ### Playwright Configuration
@@ -219,4 +189,3 @@ The use of API Client, Builder, and Validator patterns improves:
 
 - Run: `npx playwright install --force`
 - Check Node.js version compatibility
-- Ensure sufficient disk space
