@@ -79,11 +79,10 @@ Test results are displayed in the console with:
 - ✅ Passed tests
 - ❌ Failed tests
 - ⏱️ Execution time
-- Summary statistics
 
 ### JSON Report
 
-A JSON report is generated at `test-results.json` for CI/CD integration and programmatic access.
+A JSON report is generated at `test-results.json`
 
 ## Test Structure
 
@@ -189,3 +188,4 @@ The use of API Client, Builder, and Validator patterns improves:
 
 - Run: `npx playwright install --force`
 - Check Node.js version compatibility
+
